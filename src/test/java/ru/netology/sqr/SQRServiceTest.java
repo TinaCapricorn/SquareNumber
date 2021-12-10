@@ -11,7 +11,8 @@ class SQRServiceTest {
     @CsvSource(value = {"Between 200 and 300, 200, 300, 3",
             "Between 100 and 900, 100, 900, 21",
             "Between 100 and 10000, 100, 10000, 90",
-            "Between 10 and 600, 10, 600, 15"})
+            "Between 10 and 600, 10, 600, 15",
+            "Between 50 and 80, 50, 80, 0"})
     void SQRService(String name, int bottomNumber, int upperNumber, int expected) {
         SQRService service = new SQRService();
 
